@@ -7,6 +7,7 @@ class MockWordClockScene : public WordClockScene {
   private:
     uint8_t hour;
     uint8_t minute;
+    bool initialised;
 
   public:
     MockWordClockScene(IAnimator *animator, IWordingStrategy *wordingStrategy)

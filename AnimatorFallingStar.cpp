@@ -49,7 +49,6 @@ bool FallingStar::animate() {
 
 void FallingStarAnimator::clearPixel(uint8_t x, uint8_t y) {
   if (starCount == FALLING_STAR_LIMIT) {
-    Serial.print("FALLING_STAR_LIMIT reached\n");
     driver->setPixel(x, y, 0);
     return;
   }
